@@ -5,8 +5,24 @@ module.exports = function (app) {
   })
 
   app.post('/api/friends', function (req, res) {
-    friendsData.push(req.body);
-    res.json(true);
+    var closestFriend = ''
+    var minTotalDiff = 100
+
+    for (var i = 0; i < friendsData.length; i++) {
+      var scores = friendsData[i].scores
+      var totalDiff = 0
+      for (var j = 0; j < scores.length; j++) {
+        var diff = Math.abs(scores[j] - req.body.scores[j])
+        totalDiff += diff
+      }
+
+      if (totalDiff < minTotalDiff) {
+        minTotalDiff = totalDiff
+        closestFriend = friendsData[i].name
+      }
+    }
+    friendsData.push(req.body)
+    res.json(closestFriend)
   })
 
   app.get('/api/clear', function (req, res) {
