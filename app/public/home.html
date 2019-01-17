@@ -4,31 +4,62 @@
   <meta charset="UTF-8">
   <title>Friend Finder</title>
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  background-image: url("https://coolbackgrounds.io/images/unsplash/samuel-zeller-medium-b832fe04.jpg");
+}
+.container {
+  border-radius: 25px;
+  border: 2px solid grey;
+  max-width: 960px;
+  margin: 15% auto;
+  background: rgb(117, 117, 117);
+  opacity: 0.8;
+}
+h1{
+  font-size: 50px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
 
+}
+h2 {
+  text-align: center;
+  font-size: 35px;
+}
+.footer {
+  text-align: center;
+}
+.btn {
+  margin:20px 0;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(2, 15, 2);
+  font-size:20px;
+  color: white
+}
+.text-center {
+  text-align: center;
+}
+</style>
 </head>
 <body>
 
   <div class="container">
 
-    <div class="jumbotron">
-      <h1 class="text-center"><span class="fa fa-fire"></span> Friend Finder </h1>
+      <h1> Friend Finder </h1>
       <hr>
-      <h2 class="text-center">Answer a few basic questions. <br> Then find the friend with the greatest compatibility !</h2>
+      <h2>Answer a few basic questions. <br> Then find the friend with the greatest compatibility !</h2>
       <br>
 
       <div class="text-center">
-        <a href="/survey"><button class="btn btn-lg btn-primary"><span class="fa fa-list-alt"></span> Go Survey </button></a>
+        <a href="/survey"><button class="btn btn-lg btn-primary"> Go Survey </button></a>
       </div>
 
     </div>
 
     <footer class="footer">
-      <div class="container">
      <a href="/api/friends">API Friends List</a> | <a href="/api/clear">Clear API</a> 
-      </div>
     </footer>
 
   </div>

@@ -8,170 +8,394 @@
     <link rel="stylehseet" text="style/css" href="../assets/style.css">
     <link rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style text="style/css">
+      .question.section{
+        width: 100%;
+        margin: 0px auto;
+      }
+      
+      .questionBlock {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .form-check-inline {
+        width: 15%;
+        margin: auto 20px;;
+      }
+
+      .questions {
+        font-size: 25px;
+        margin-top : 35px;
+        margin-left: 30px;
+      }
+
+      .question-p {
+        font: italic bold 25px;
+        margin: 0 30px;
+      }
+
+      .container {
+        border-radius: 25px;
+        border: 2px solid grey;
+        max-width: 960px;
+        margin: 0 auto;
+        background: rgb(117, 117, 117);
+        opacity: 0.8; 
+      }
+      h1 {
+        text-align: center;
+        margin:50px auto; 
+        border-bottom: 2px solid rgb(117, 117, 117);
+        max-width: 960px;
+      }
+      label {
+        margin:15px 15px;
+        font: italic bold 25px; 
+      }
+      .btn {
+        margin:20px 0;
+        border-radius: 10px;
+        padding: 10px;
+        border: rgb(2, 15, 2);
+        background-color: rgb(2, 15, 2);
+        font-size:20px;
+        color: white;
+        padding: 10px 30px;
+      }
+      .footer {
+         text-align: center;
+      }
+
+      </style>
   </head>
 
   <body>
 
+    <h1>Survey Questions</h1>
     <div class="container">
-      <div class="jumbotron">
-        <h2 class="text-left">Survey Questions</h2>
-        <h2 class="text-left">About you</h2>
-        <form class="form-group">
-          <label for="exampleFormControlInput1">Name(Required)</label>
-          <input type="name" class="form-control"
-            id="name">
-          <label for="exampleFormControlInput1">Link to Photo Image(Required)</label>
-          <input type="name" class="form-control"
-            id="link-image">
-
-          <!-- </div> -->
-          <div class="all-question">
-            <div class="question section">
-              <div class="question">Question 1</div>
-              <p>Your mind is always buzzing with unexplored ideas and plans.</p>
-              <select class="custom-select" id="q1" required>
-                <option value="" selected>Select an Option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-              </select>
-            </div>
-            <div class="question section">
-              <div class="question">Question 2</div>
-              <p>Generally speaking, you rely more on your experience than your
-                imagination.</p>
-              <select class="custom-select" id="q2" required>
-                <option value="" selected>Select an Option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-              </select>
-            </div>
-            <div class="question section">
-              <div class="question">Question 3</div>
-              <p>You find it easy to stay relaxed and focused even when there is
-                some pressure.</p>
-              <select class="custom-select" id="q3" required>
-                <option value="" selected>Select an Option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-              </select>
-            </div>
-            <div class="question section">
-              <div class="question">Question 4</div>
-              <p>You rarely do something just out of sheer curiosity.</p>
-              <select class="custom-select" id="q4" required>
-                <option value="" selected>Select an Option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-              </select>
-            </div>
-            <div class="question section">
-              <div class="question">Question 5</div>
-              <p>People can rarely upset you.</p>
-              <select class="custom-select" id="q5" required>
-                <option value="" selected>Select an Option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-              </select>
-            </div>
-            <div class="question section">
-              <div class="question">Question 6</div>
-              <p>It is often difficult for you to relate to other people’s
-                feelings.</p>
-              <select class="custom-select" id="q6" required>
-                <option value="" selected>Select an Option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-              </select>
-            </div>
-            <div class="question section">
-              <div class="question">Question 7</div>
-              <p>In a discussion, truth should be more important than people’s
-                sensitivities.</p>
-              <select class="custom-select" id="q7" required>
-                <option value="" selected>Select an Option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-              </select>
-            </div>
-            <div class="question section">
-              <div class="question">Question 8</div>
-              <p>You rarely get carried away by fantasies and ideas.</p>
-              <select class="custom-select" id="q8" required>
-                <option value="" selected>Select an Option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-              </select>
-            </div>
-            <div class="question section">
-              <div class="question">Question 9</div>
-              <p>You think that everyone’s views should be respected regardless
-                of
-                whether they are supported by facts or not.</p>
-              <select class="custom-select" id="q9" required>
-                <option value="" selected>Select an Option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-              </select>
-            </div>
-            <div class="question section">
-              <div class="question">Question 10</div>
-              <p>You feel more energetic after spending time with a group of
-                people.</p>
-              <select class="custom-select" id="q10" required>
-                <option value="" selected>Select an Option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-              </select>
-            </div>
-            <button class="btn btn-primary submit" type="submit">Submit</button>
-            <!-- <input type="submit" class="btn btn-primary" /> -->
-          </form>
-        </div>
-        <footer class="footer">
-          <div class="container">
-            <a href="/api/friends">API Friends List</a> | <a href="/api/clear">Clear
-              API</a>
-          </div>
-        </footer>
-
+      <div class="form-group">
+        <label for="usr">Name (Required):</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+      <div class="form-group">
+        <label for="link-image">Link to Photo Image (Required):</label>
+        <input type="url" class="form-control" id="link-image">
       </div>
 
-      <script>
+
+      <div class="question section">
+        <div class="questions">Question 1</div>
+        <p class="question-p"> Your mind is always buzzing with unexplored ideas
+          and plans.</p>
+        <div class="questionBlock">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio"
+              name="q1" id="q1" value="1">
+            <label class="form-check-label">1(Strongly Disagree)</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio"
+              name="q1" id="q1" value="2">
+            <label class="form-check-label">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio"
+              name="q1" id="q1" value="3">
+            <label class="form-check-label">3</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio"
+              name="q1" id="q1" value="4">
+            <label class="form-check-label">4</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio"
+              name="q1" id="q1" value="5">
+            <label class="form-check-label">5(Strongly Agree)</label>
+          </div>
+        </div>
+
+        <div class="questions">Question 2</div>
+        <p class="question-p">Generally speaking, you rely more on your
+          experience than your
+          imagination.</p>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q2" id="q2" value="1">
+          <label class="form-check-label">1(Strongly Disagree)</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q2" id="q2" value="2">
+          <label class="form-check-label">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q2" id="q2" value="3">
+          <label class="form-check-label">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q2" id="q2" value="4">
+          <label class="form-check-label">4</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q2" id="q2" value="5">
+          <label class="form-check-label">5(Strongly Agree)</label>
+        </div>
+
+        <div class="questions">Question 3</div>
+        <p class="question-p">You find it easy to stay relaxed and focused even
+          when there is
+          some pressure.</p>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q3" id="q3" value="1">
+          <label class="form-check-label">1(Strongly Disagree)</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q3" id="q3" value="2">
+          <label class="form-check-label">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q3" id="q3" value="3">
+          <label class="form-check-label">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q3" id="q3" value="4">
+          <label class="form-check-label">4</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q3" id="q3" value="5">
+          <label class="form-check-label">5(Strongly Agree)</label>
+        </div>
+
+        <div class="questions">Question 4</div>
+        <p class="question-p">You rarely do something just out of sheer
+          curiosity.</p>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q4" id="q4" value="1">
+          <label class="form-check-label">1(Strongly Disagree)</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q4" id="q4" value="2">
+          <label class="form-check-label">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q4" id="q4" value="3">
+          <label class="form-check-label">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q4" id="q4" value="4">
+          <label class="form-check-label">4</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q4" id="q4" value="5">
+          <label class="form-check-label">5(Strongly Agree)</label>
+        </div>
+
+        <div class="questions">Question 5</div>
+        <p class="question-p">People can rarely upset you.</p>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q5" id="q5" value="1">
+          <label class="form-check-label">1(Strongly Disagree)</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q5" id="q5" value="2">
+          <label class="form-check-label">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q5" id="q5" value="3">
+          <label class="form-check-label">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q5" id="q5" value="4">
+          <label class="form-check-label">4</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q5" id="q5" value="5">
+          <label class="form-check-label">5(Strongly Agree)</label>
+        </div>
+
+        <div class="questions">Question 6</div>
+        <p class="question-p">It is often difficult for you to relate to other
+          people’s
+          feelings.</p>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q6" id="q6" value="1">
+          <label class="form-check-label">1(Strongly Disagree)</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q6" id="q6" value="2">
+          <label class="form-check-label">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q6" id="q6" value="3">
+          <label class="form-check-label">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q6" id="q6" value="4">
+          <label class="form-check-label">4</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q6" id="q6" value="5">
+          <label class="form-check-label">5(Strongly Agree)</label>
+        </div>
+
+        <div class="questions">Question 7</div>
+        <p class="question-p"> In a discussion, truth should be more important
+          than people’s
+          sensitivities.</p>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q7" id="q7" value="1">
+          <label class="form-check-label">1(Strongly Disagree)</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q7" id="q7" value="2">
+          <label class="form-check-label">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q7" id="q7" value="3">
+          <label class="form-check-label">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q7" id="q7" value="4">
+          <label class="form-check-label">4</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q7" id="q7" value="5">
+          <label class="form-check-label">5(Strongly Agree)</label>
+        </div>
+
+        <div class="questions">Question 8</div>
+        <p class="question-p"> You rarely get carried away by fantasies and
+          ideas.</p>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q8" id="q8" value="1">
+          <label class="form-check-label">1(Strongly Disagree)</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q8" id="q8" value="2">
+          <label class="form-check-label">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q8" id="q8" value="3">
+          <label class="form-check-label">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q8" id="q8" value="4">
+          <label class="form-check-label">4</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q8" id="q8" value="5">
+          <label class="form-check-label">5(Strongly Agree)</label>
+        </div>
+
+        <div class="questions">Question 9</div>
+        <p class="question-p">You think that everyone’s views should be
+          respected regardless
+          of
+          whether they are supported by facts or not.</p>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q9" id="q9" value="1">
+          <label class="form-check-label">1(Strongly Disagree)</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q9" id="q9" value="2">
+          <label class="form-check-label">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q9" id="q9" value="3">
+          <label class="form-check-label">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q9" id="q9" value="4">
+          <label class="form-check-label">4</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q9" id="q9" value="5">
+          <label class="form-check-label">5(Strongly Agree)</label>
+        </div>
+
+        <div class="questions">Question 10</div>
+        <p class="question-p">You feel more energetic after spending time with a
+          group of
+          people.</p>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q10" id="q10" value="1">
+          <label class="form-check-label">1(Strongly Disagree)</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q10" id="q10" value="2">
+          <label class="form-check-label">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q10" id="q10" value="3">
+          <label class="form-check-label">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q10" id="q10" value="4">
+          <label class="form-check-label">4</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio"
+            name="q10" id="q10" value="5">
+          <label class="form-check-label">5(Strongly Agree)</label>
+        </div>
+
+        <div class="text-center">
+          <button class="btn btn-primary submit" type="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+      <footer class="footer">
+        <a href="/api/friends">API Friends List</a> | <a href="/api/clear">Clear
+          API</a>
+      </footer>
+
+
+    <script>
       $(".submit").on("click", function(event) {
         event.preventDefault();
 
@@ -179,21 +403,20 @@
           name: $('#name').val().trim(),
           photo: $('#link-image').val().trim(),
           scores: [
-            $('#q1').val(),
-            $('#q2').val(),
-            $('#q3').val(),
-            $('#q4').val(),
-            $('#q5').val(),
-            $('#q6').val(),
-            $('#q7').val(),
-            $('#q8').val(),
-            $('#q9').val(),
-            $('#q10').val()
+          $("input[name='q1']:checked").val(),
+          $("input[name='q2']:checked").val(),
+          $("input[name='q3']:checked").val(),
+          $("input[name='q4']:checked").val(),
+          $("input[name='q5']:checked").val(),
+          $("input[name='q6']:checked").val(),
+          $("input[name='q7']:checked").val(),
+          $("input[name='q8']:checked").val(),
+          $("input[name='q9']:checked").val(),
+          $("input[name='q10']:checked").val(),
           ]
         }
       
         $.post('api/friends', newSurvey, function (data) {
-
           alert(data)
         })
 
@@ -201,6 +424,6 @@
 
         
     </script>
-    </body>
+  </body>
 
-  </html>
+</html>

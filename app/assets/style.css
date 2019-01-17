@@ -1,7 +1,15 @@
-.question {
-  font-size: 25px;
+.questions {
+  font-size: 35px;
   margin: 2%;
+  width: 100%;
+  color: red;
 }
 p {
   font-size: 20px;
+}
+.container {
+  border-radius: 25%;
+  border: 2px solid grey;
+  width: 100%;
+
 }
